@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>贪吃蛇游戏 - 经典游戏重制版</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper">
+        <h1 class="game-title">贪吃蛇大冒险</h1>
+        
+        <div class="game-container">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+        </div>
+        
+        <div class="stats-container">
+            <div class="score">得分: <span id="score">0</span></div>
+            <div class="high-score">最高分: <span id="highScore">0</span></div>
+        </div>
+        
+        <div class="game-controls">
+            <button id="startBtn">开始游戏</button>
+            <button id="pauseBtn">暂停/继续</button>
+            <button id="resetBtn">重新开始</button>
+        </div>
+        
+        <div class="controls-info">
+            <p><strong>键盘控制:</strong> 方向键移动，按住加速</p>
+            <p><strong>鼠标控制:</strong> 移动鼠标引导蛇头，速度更快</p>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
